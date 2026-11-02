@@ -1,52 +1,12 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simulated dating-app chats and English practice for adults. Learn to move from a first message to a public first meeting, with clear communication and consent.">
-  <title>Chinda — adult English & roleplay practice</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="chat.css">
-</head>
-<body>
-  <aside class="sidebar">
-    <a class="logo" href="./" aria-label="Chinda home">chinda<span aria-hidden="true">✿</span></a>
-    <div class="tagline">a little courage. a real conversation.</div>
-    <nav aria-label="Main navigation">
-      <button class="active" data-view="discover" aria-label="Dating-app practice" aria-current="page">✧ <span>Dating-app practice</span></button>
-      <button data-view="language" aria-label="Flirting in English">♧ <span>Flirting in English</span></button>
-      <button data-view="guide" aria-label="Respect & connection">♡ <span>Respect & connection</span></button>
-    </nav>
-    <div class="side-bottom">
-      <div class="sidebar-landscape" aria-hidden="true"></div>
-      <h3>A little practice.<br>A kinder connection.</h3>
-      <p>Read. Listen. Speak with care.</p>
-      <div class="user"><div class="avatar" aria-hidden="true">🌸</div><div><b>Adult learning · 18+</b><span>Fictional adults · No real messages</span></div></div>
-    </div>
-  </aside>
-  <main>
-    <header><div class="breadcrumb"><span class="header-blossom" aria-hidden="true">✿</span> YOUR CONVERSATION ERA</div><span class="adult-badge">18+ learning space</span></header>
-    <section class="intro">
-      <div class="intro-copy">
-        <div class="eyebrow">ENGLISH PRACTICE, WITH A LITTLE ANIME MAGIC</div>
-        <h1>Every connection<br>starts with <em>words.</em></h1>
-        <p>Read their story. Send the first message.<br>Practice the move from app to a first date.</p>
-        <div class="hero-note"><span aria-hidden="true">♡</span> A little practice. A kinder connection.</div>
-      </div>
-      <div class="intro-art" aria-hidden="true">
-        <div class="rose-sun"></div>
-        <img class="sakura-branch" src="assets/japan-sakura.svg" alt="">
-        <img class="hero-mountains" src="assets/himalayan-mountains.svg" alt="">
-        <div class="hero-seal">✿</div>
-      </div>
-    </section>
-    <section id="practice" aria-label="Conversation practice"></section>
-    <noscript>This practice app needs JavaScript enabled.</noscript>
-    <footer class="page-footer"><span aria-hidden="true">✿</span> A little courage can begin a beautiful conversation. <span aria-hidden="true">✿</span></footer>
-  </main>
-  <script src="chat-engine.js"></script>
-  <script src="chat-ui.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Chinda: respectful dating-app English practice for adults."><title>Chinda · Practice conversations</title><link rel="stylesheet" href="chinda-v2.css"></head>
+<body><div class="shell"><aside class="sidebar"><a class="brand" href="./">🌸 <b>chinda</b></a><nav aria-label="Main navigation"><button data-nav="discover" class="active">⌕ <span>Discover</span></button><button data-nav="chats">☏ <span>Practice chats</span></button><button data-nav="tips">♧ <span>English tips</span></button></nav><div class="filters"><b>Practice with</b><label><input type="radio" name="gender" value="male"> Male</label><label><input type="radio" name="gender" value="female"> Female</label><label><input type="radio" name="gender" value="all" checked> Gender is a construct — all genders</label></div><p class="bottom">18+ · Fictional profiles</p></aside>
+<main class="layout"><section class="card profile" id="profile-pane"><div class="pictures"><div class="main-photo" id="main-photo" role="img" aria-label="Portrait placeholder"><span id="photo-label">Alex · bookshop</span></div><div class="thumbs" id="thumbs"></div></div><div class="profile-text"><h1 id="person-name">Alex, 25</h1><p id="pronouns">they/them</p><p id="bio"></p><div id="interests" class="chips"></div><p id="preferences"></p><div class="profile-actions"><button id="next-person" class="round" title="Next profile" aria-label="Next profile">✕</button><button id="start" class="primary">☏ &nbsp; Practice a chat</button></div></div></section>
+<section class="card conversation" id="chat-pane"><header class="chat-heading"><div><h2 id="chat-title">Alex</h2><p>Scripted practice · not a real person or match</p></div><button id="reset" class="more" aria-label="Restart conversation" title="Restart conversation">↻</button></header>
+<div class="goal-box"><strong>Practice goal</strong><div class="goals" id="goals"></div></div>
+<div class="log" id="log" role="log" aria-live="polite" aria-label="Practice conversation"></div>
+<details class="coaching" id="coach"><summary><span aria-hidden="true">ⓘ</span> <span id="coach-title">Language & tone</span></summary><p id="coach-copy">A yes to being free is not acceptance of a date.</p></details>
+<div class="suggest"><span>Suggested message — edit before sending</span><button id="another" type="button">Try another ↻</button></div>
+<form id="composer"><label class="sr" for="message">Your message</label><input id="message" maxlength="600" autocomplete="off" placeholder="Write your message…" required><button aria-label="Send message" class="send" type="submit">➤</button></form>
+<p class="privacy">Stay in the app if you prefer. Never enter real contact details. 🔥 Flirty · 🔥🔥 Suggestive/check welcome · 🔥🔥🔥 Boundary crossed/stop</p>
+</section></main><div class="mobile-tabs"><button data-panel="profile" class="active">Profile</button><button data-panel="chat">Conversation</button></div></div><script src="chinda-v2.js"></script></body></html>
